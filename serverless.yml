@@ -1,4 +1,4 @@
-service: dynamo-scheduled-backup
+service: DynamoDB Scheduled Backup using Lambda Function
 
 provider:
   name: aws
