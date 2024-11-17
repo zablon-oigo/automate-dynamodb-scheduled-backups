@@ -5,3 +5,15 @@ provider:
   runtime: nodejs20.x
   stage: dev
   region: us-west-2
+
+functions:
+  backupDB:
+    handler: index.handler
+    name: backup
+    description: A scheduled lambda function that performs a database backup for a DynamoDB table.
+    memorySize: 128
+    timeout: 5
+    events:
+      - schedule: rate(3 minutes)
+    environment:
+      DYNAMODB_TABLE_NAME: product
