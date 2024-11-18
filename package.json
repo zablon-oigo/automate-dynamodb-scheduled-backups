@@ -8,5 +8,10 @@
   "keywords": [],
   "author": "Zablon",
   "license": "ISC",
-  "description": "Serverless application that performs  scheduled backup of a DynamoDB table."
+  "description": "Serverless application that performs  scheduled backup of a DynamoDB table.",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "dotenv": "^16.4.5",
+    "serverless": "^4.4.10"
+  }
 }
