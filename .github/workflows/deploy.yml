@@ -25,4 +25,5 @@ jobs:
              npm ci
              npm run build
 
-        
+      - name: Install Serverless Framework
+        run: npm install -g serverless
