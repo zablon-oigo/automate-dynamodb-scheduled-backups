@@ -7,6 +7,9 @@ module.exports.handler = async () => {
     const params = {
       BackupName: `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`,
       TableName: process.env.DYNAMODB_TABLE_NAME,
+      if (!tableName) {
+        throw new Error("Environment variable DYNAMODB_TABLE_NAME is not defined.");
+      }
     };
     const backupRes = await dynamodb.createBackup(params).promise();
     console.log({ backupRes });
