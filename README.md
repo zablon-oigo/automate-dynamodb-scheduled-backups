@@ -2,3 +2,6 @@
 
 ## Automate DynamoDB Scheduled Backups
 Amazon DynamoDB is a serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale.
+## Tech Stack
+1. **Cloud:** AWS
+2. **Server:** Node, Express
