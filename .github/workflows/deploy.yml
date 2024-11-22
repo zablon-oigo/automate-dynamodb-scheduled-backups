@@ -20,10 +20,9 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Install Dependencies & Build Project
+      - name: Install Dependencies
         run: | 
              npm ci
-             npm run build
 
       - name: Install Serverless Framework
         run: npm install -g serverless
